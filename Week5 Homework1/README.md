@@ -29,11 +29,11 @@ def test_skip():
 
 ## @pytest.mark.skipif()
 Skips the test if the condition after it is true.
-
+```
 @pytest.mark.skipif(sys.platform != 'linux', reason="Linux tests")
 def test_linux():
     assert True
-
+```
 ## @pytest.mark.xfail
 If you're expecting a test to fail, you can use this decorator.
 It marks the test as "excpected fail" , if the test actually fails it will say "excpected fail".
